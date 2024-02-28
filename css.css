@@ -2,27 +2,18 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: rgb(255, 255, 255);
-
-    position: relative;
-    /* Kreves for å posisjonere det indre elementet */
-    width: 500px;
-    /* Bredden på kortet */
-    height: 700px;
-    /* Høyden på kortet */
-    border-radius: 10px;
-    /* Avrundede hjørner for å gi kortform */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Skyggeeffekt for å gi dybde */
-    margin: 50px auto;
-    /* Senter kortet horisontalt */
-    padding: 20px;
-    /* Innpakning for innholdet innenfor kortet */
+    background-color: rgb(255, 239, 253);
 }
 
 .container {
     text-align: center;
     margin-top: 50px;
+    width: 500px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+    margin: 50px auto;
+    padding: 20px;
 }
 
 h1 {
@@ -31,10 +22,11 @@ h1 {
 
 .game-options {
     margin-top: 20px;
+    text-align: center;
 }
 
 button {
-    padding: 10px 20px;
+    padding: 8px 10px;
     font-size: 18px;
     margin: 5px;
     cursor: pointer;
@@ -42,26 +34,41 @@ button {
     color: #000000;
     border: none;
     border-radius: 5px;
-    /* Add box-shadow for a 3D effect */
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    /* Add transition for smooth hover effect */
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: block;
+    /* Plasser knappene under hverandre */
+    width: 100%;
+    /* Sørg for at knappene strekker seg over hele bredden av containeren */
+
 }
 
 button:hover {
     transform: translateY(-2px);
-    /* Apply translateY to create a lift effect on hover */
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
-    /* Increase box-shadow size on hover */
 }
 
-/*knapper*/
-.container {
-    text-align: center;
-    margin-top: 50px;
+.image-container {
+    display: flex;
+    /* Bruk flex-boks for å enkelt plassere bildene ved siden av hverandre */
 }
 
-.game-options {
-    text-align: center;
-    /* Sentrer knappene */
+.image-container img {
+    width: 150px;
+    /* Juster bredden på bildene etter behov */
+    height: auto;
+    /* La høyden justeres automatisk for å opprettholde proporsjonene */
+    margin: 10px;
+    /* Legg til en margin rundt bildene for luft */
+}
+
+.image-container {
+    display: float;
+    justify-content: center;
+    /* Sentrer bildene horisontalt */
+    align-items: flex-start;
+    /* Plasser bildene øverst */
+    margin-top: 0xpx;
+    /* Juster etter behov for å øke avstanden fra toppen */
+
 }
