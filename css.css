@@ -3,6 +3,21 @@ body {
     margin: 0;
     padding: 0;
     background-color: rgb(255, 255, 255);
+
+    position: relative;
+    /* Kreves for å posisjonere det indre elementet */
+    width: 500px;
+    /* Bredden på kortet */
+    height: 700px;
+    /* Høyden på kortet */
+    border-radius: 10px;
+    /* Avrundede hjørner for å gi kortform */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* Skyggeeffekt for å gi dybde */
+    margin: 50px auto;
+    /* Senter kortet horisontalt */
+    padding: 20px;
+    /* Innpakning for innholdet innenfor kortet */
 }
 
 .container {
@@ -27,11 +42,17 @@ button {
     color: #000000;
     border: none;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    /* Add box-shadow for a 3D effect */
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    /* Add transition for smooth hover effect */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 button:hover {
-    background-color: pink;
+    transform: translateY(-2px);
+    /* Apply translateY to create a lift effect on hover */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.5);
+    /* Increase box-shadow size on hover */
 }
 
 /*knapper*/
@@ -43,66 +64,4 @@ button:hover {
 .game-options {
     text-align: center;
     /* Sentrer knappene */
-}
-
-.btn {
-    background-color: #ff22c8;
-    border: none;
-    color: white;
-    padding: 15px 25px;
-    text-align: center;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 10px;
-    /* Rundede hjørner */
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    /* Skyggeeffekt */
-    transition: transform 0.3s ease;
-    /* Glatt overgang ved hovering */
-    display: block;
-    /* Plasser knappene under hverandre */
-    margin: 10px auto;
-    /* Legg til margin for å justere mellomrommet mellom knappene */
-
-}
-
-.btn:hover {
-    transform: scale(1.05);
-    /* Forstørrelsesanimasjon ved hovering */
-}
-
-.spill1 {
-    position: relative;
-    /* Kreves for å posisjonere det indre elementet */
-    width: 500px;
-    /* Bredden på kortet */
-    height: 700px;
-    /* Høyden på kortet */
-    border-radius: 10px;
-    /* Avrundede hjørner for å gi kortform */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* Skyggeeffekt for å gi dybde */
-    margin: 50px auto;
-    /* Senter kortet horisontalt */
-    padding: 20px;
-    /* Innpakning for innholdet innenfor kortet */
-}
-
-.spill1 .background {
-    position: absolute;
-    /* Posisjoner elementet relativt til foreldreelementet */
-    top: 0;
-    /* Plasser øverst i foreldreelementet */
-    left: 0;
-    /* Plasser til venstre i foreldreelementet */
-    width: 100%;
-    /* Ta opp all bredde */
-    height: 100%;
-    /* Ta opp all høyde */
-    background-color: #f452b3;
-    /* Bakgrunnsfarge for bakgrunnen bak kortet */
-    border-radius: 10px;
-    /* Samme avrundede hjørner som kortet */
-    z-index: -1;
-    /* Plasser bakgrunnen bak kortet */
 }
