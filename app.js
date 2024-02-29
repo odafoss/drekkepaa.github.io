@@ -1,6 +1,5 @@
 // Liste med spørsmål for spill 1
 var sporsmalListe1 = [
-    "Den til venstre for den som leser må ha en chuggekonkurranse med en valgfri person, taperen blir lapsa i trynet, den som taper kan velge av hvem",
     "Les opp den siste meldingen som kommer når du søker unnskyld i søkefeltet",
     "Drikk så mange slurker som det er folk her",
     "Alle drikker 5 slurker",
@@ -10,7 +9,7 @@ var sporsmalListe1 = [
     "Etterlign en person her, om folk gjetter hvem det er kan du dele ut 10 slurker, hvis ikke må de drikkes selv",
     "Two truths, One lie (gjetter man feil, drikk, de som gjetter rett deler ut slurk",
     "Sett på en timer på egenvalgt tid som kun DU vet om. Når timeren går må alle ha drukket opp glasset sitt, hvis ikke må de chugge. Perfekt å ha i bakgrunnen.",
-    "Drikk anntall søsken du har",
+    "Drikk antall søsken du har",
     "Del ut 4 slurker",
     "Ta 5 slurker",
     "Hvem skal bli full idag? SKÅÅÅL",
