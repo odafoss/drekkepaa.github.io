@@ -7,29 +7,38 @@ var sporsmalListe1 = [
     "Hva er din mest pinlige drikkehistorie?",
     "Hvis du kunne reise hvor som helst i verden, hvor ville du dratt?",
     "Hva er den rareste drømmen du har hatt?",
-    "Del en morsom historie fra din siste fyllekveld.",
-
+    "Del en morsom historie fra din siste fyllekveld."
 ];
 
 // Liste med spørsmål for spill 2
 var sporsmalListe2 = [
     "FIREBALL🔥",
-    "Gjør som Oda og CHUGGG!",
-    "SHOT",
-
+    "Gjør som Oda å CHUGGG!",
+    "SHOT"
 ];
 
-var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål
+var currentQuestionIndex1 = -1; // Indeks for gjeldende spørsmål i spill 1, starter på -1 for å vise "Klar?" først
+var currentQuestionIndex2 = -1; // Indeks for gjeldende spørsmål i spill 2, starter på -1 for å vise "Klar?" først
+var questionsShown1 = 0; // Antall spørsmål vist for spill 1
+var questionsShown2 = 0; // Antall spørsmål vist for spill 2
 
 // Funksjon for å vise spørsmålet basert på hvilket spill det er
 function visSporsmal(indeks, sporsmalListe) {
-    if (indeks < sporsmalListe.length - 1) {
+    if (indeks < sporsmalListe.length) {
         document.getElementById("sporsmal").innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
+        if (sporsmalListe === sporsmalListe1) {
+            questionsShown1++;
+        } else if (sporsmalListe === sporsmalListe2) {
+            questionsShown2++;
+        }
     } else {
-        document.getElementById("sporsmal").innerHTML = "<p> Skål! Det var siste spørsmål!</p>";
+        if (sporsmalListe === sporsmalListe1 && questionsShown1 === sporsmalListe1.length) {
+            document.getElementById("sporsmal").innerHTML += "<p>Skål, dere er ferdig med spill 1!</p>";
+        } else if (sporsmalListe === sporsmalListe2 && questionsShown2 === sporsmalListe2.length) {
+            document.getElementById("sporsmal").innerHTML += "<p>Skål, dere er ferdig med spill 2!</p>";
+        }
     }
 }
-
 
 // Funksjon for å blande spørsmålslisten
 function blandSporsmalListe(sporsmalListe) {
@@ -39,39 +48,37 @@ function blandSporsmalListe(sporsmalListe) {
     }
 }
 
-// Kall funksjonen når siden lastes inn
+// Kall funksjonen når siden lastes inn for spill 1
 window.onload = function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
     if (spill === "spill1") {
-        blandSporsmalListe(sporsmalListe1); // Bland spørsmål for spill 1
-        visSporsmal(currentQuestionIndex, sporsmalListe1);
+        document.getElementById("sporsmal").innerHTML = "<p>Klar?</p>";
     } else if (spill === "spill2") {
-        blandSporsmalListe(sporsmalListe2); // Bland spørsmål for spill 2
-        visSporsmal(currentQuestionIndex, sporsmalListe2);
+        document.getElementById("sporsmal").innerHTML = "<p>Klar?</p>";
     }
 };
 
 // Legg til klikkhendelse for "Neste" -knapp
 document.getElementById("nesteKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1" && currentQuestionIndex < sporsmalListe1.length - 1) {
-        currentQuestionIndex++;
-        visSporsmal(currentQuestionIndex, sporsmalListe1);
-    } else if (spill === "spill2" && currentQuestionIndex < sporsmalListe2.length - 1) {
-        currentQuestionIndex++;
-        visSporsmal(currentQuestionIndex, sporsmalListe2);
+    if (spill === "spill1") {
+        currentQuestionIndex1++;
+        visSporsmal(currentQuestionIndex1, sporsmalListe1);
+    } else if (spill === "spill2") {
+        currentQuestionIndex2++;
+        visSporsmal(currentQuestionIndex2, sporsmalListe2);
     }
 });
 
 // Legg til klikkhendelse for "Forrige" -knapp
 document.getElementById("forrigeKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1" && currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        visSporsmal(currentQuestionIndex, sporsmalListe1);
-    } else if (spill === "spill2" && currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        visSporsmal(currentQuestionIndex, sporsmalListe2);
+    if (spill === "spill1" && currentQuestionIndex1 > 0) {
+        currentQuestionIndex1--;
+        visSporsmal(currentQuestionIndex1, sporsmalListe1);
+    } else if (spill === "spill2" && currentQuestionIndex2 > 0) {
+        currentQuestionIndex2--;
+        visSporsmal(currentQuestionIndex2, sporsmalListe2);
     }
 });
 
@@ -79,34 +86,6 @@ document.getElementById("forrigeKnapp").addEventListener("click", function () {
 document.getElementById("tilbakeTekst").addEventListener("click", function () {
     window.location.href = "index.html"; // Sender brukeren tilbake til hovedsiden
 });
-
-// Funksjon for å vise spørsmålet basert på hvilket spill det er
-function visSporsmal(indeks, sporsmalListe) {
-    var sporsmalElement = document.getElementById("sporsmal");
-
-    if (indeks < sporsmalListe.length - 1) {
-        sporsmalElement.innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
-        sporsmalElement.style.backgroundColor = ""; // Tilbakestill bakgrunnsfargen
-        clearInterval(blinkInterval); // Stopp blinkingen hvis den allerede er i gang
-    } else {
-        sporsmalElement.innerHTML = "<p>Du har besvart alle spørsmålene!</p>";
-        sporsmalElement.style.backgroundColor = "pink"; // Endre bakgrunnsfargen til 
-        startBlinking(); // Start blinkingen
-    }
-}
-
-// Funksjon for å starte blinkingen av bilde
-function startBlinking() {
-    var blinkingImage = document.getElementById("blinkingImage");
-    var blinkInterval = setInterval(function () {
-        blinkingImage.style.visibility = (blinkingImage.style.visibility == 'hidden' ? '' : 'hidden');
-    }, 500); // Blink hvert 0.5 sekund (500 millisekunder)
-}
-
-
-
-
-
 
 
 
