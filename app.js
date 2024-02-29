@@ -14,30 +14,16 @@ var sporsmalListe1 = [
 var sporsmalListe2 = [
     "FIREBALL🔥",
     "Gjør som Oda å CHUGGG!",
-    "SHOT"
+    "SHOT",
+    "Its giving old, eldste drikker",
+    "You are the dancing queen, vis ditt beste danse move💃"
 ];
 
-var currentQuestionIndex1 = -1; // Indeks for gjeldende spørsmål i spill 1, starter på -1 for å vise "Klar?" først
-var currentQuestionIndex2 = -1; // Indeks for gjeldende spørsmål i spill 2, starter på -1 for å vise "Klar?" først
-var questionsShown1 = 0; // Antall spørsmål vist for spill 1
-var questionsShown2 = 0; // Antall spørsmål vist for spill 2
+var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål
 
 // Funksjon for å vise spørsmålet basert på hvilket spill det er
 function visSporsmal(indeks, sporsmalListe) {
-    if (indeks < sporsmalListe.length) {
-        document.getElementById("sporsmal").innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
-        if (sporsmalListe === sporsmalListe1) {
-            questionsShown1++;
-        } else if (sporsmalListe === sporsmalListe2) {
-            questionsShown2++;
-        }
-        // Vis bildet hvis "Klar?"-meldingen vises
-        if (document.getElementById("sporsmal").innerHTML.includes("Klar?")) {
-            document.getElementById("imageContainer").style.display = "block";
-        } else {
-            document.getElementById("imageContainer").style.display = "none";
-        }
-    }
+    document.getElementById("sporsmal").innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
 }
 
 // Funksjon for å blande spørsmålslisten
@@ -48,38 +34,39 @@ function blandSporsmalListe(sporsmalListe) {
     }
 }
 
-// Kall funksjonen når siden lastes inn for spill 1
+// Kall funksjonen når siden lastes inn
 window.onload = function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
     if (spill === "spill1") {
-        document.getElementById("sporsmal").innerHTML = "<p>Klar?</p>";
+        blandSporsmalListe(sporsmalListe1); // Bland spørsmål for spill 1
+        visSporsmal(currentQuestionIndex, sporsmalListe1);
     } else if (spill === "spill2") {
-        document.getElementById("sporsmal").innerHTML = "<p>Klar?</p>";
+        blandSporsmalListe(sporsmalListe2); // Bland spørsmål for spill 2
+        visSporsmal(currentQuestionIndex, sporsmalListe2);
     }
-    document.getElementById("imageContainer").style.display = "none"; // Skjul bildet ved start
 };
 
 // Legg til klikkhendelse for "Neste" -knapp
 document.getElementById("nesteKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1") {
-        currentQuestionIndex1++;
-        visSporsmal(currentQuestionIndex1, sporsmalListe1);
-    } else if (spill === "spill2") {
-        currentQuestionIndex2++;
-        visSporsmal(currentQuestionIndex2, sporsmalListe2);
+    if (spill === "spill1" && currentQuestionIndex < sporsmalListe1.length - 1) {
+        currentQuestionIndex++;
+        visSporsmal(currentQuestionIndex, sporsmalListe1);
+    } else if (spill === "spill2" && currentQuestionIndex < sporsmalListe2.length - 1) {
+        currentQuestionIndex++;
+        visSporsmal(currentQuestionIndex, sporsmalListe2);
     }
 });
 
 // Legg til klikkhendelse for "Forrige" -knapp
 document.getElementById("forrigeKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1" && currentQuestionIndex1 > 0) {
-        currentQuestionIndex1--;
-        visSporsmal(currentQuestionIndex1, sporsmalListe1);
-    } else if (spill === "spill2" && currentQuestionIndex2 > 0) {
-        currentQuestionIndex2--;
-        visSporsmal(currentQuestionIndex2, sporsmalListe2);
+    if (spill === "spill1" && currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        visSporsmal(currentQuestionIndex, sporsmalListe1);
+    } else if (spill === "spill2" && currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        visSporsmal(currentQuestionIndex, sporsmalListe2);
     }
 });
 
