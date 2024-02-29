@@ -1,13 +1,37 @@
 // Liste med spørsmål for spill 1
 var sporsmalListe1 = [
-    "Hva er din favorittdrink?",
-    "Hva er det merkeligste du har spist?",
-    "Fortell om din beste festopplevelse.",
-    "Hvilken matrett kunne du spist hver dag resten av livet?",
-    "Hva er din mest pinlige drikkehistorie?",
-    "Hvis du kunne reise hvor som helst i verden, hvor ville du dratt?",
-    "Hva er den rareste drømmen du har hatt?",
-    "Del en morsom historie fra din siste fyllekveld."
+    "Den til venstre for den som leser må ha en chuggekonkurranse med en valgfri person, taperen blir lapsa i trynet, den som taper kan velge av hvem",
+    "Les opp den siste meldingen som kommer når du søker unnskyld i søkefeltet",
+    "Drikk så mange slurker som det er folk her",
+    "Alle drikker 5 slurker",
+    "Hvem er mest lik deg? Klonen må ta 10 slurker",
+    "Hvem er mest motsatt deg? (Kontrasten drikker 10 slurker)",
+    "En runde med opus",
+    "Etterlign en person her, om folk gjetter hvem det er kan du dele ut 10 slurker, hvis ikke må de drikkes selv",
+    "Two truths, One lie (gjetter man feil, drikk, de som gjetter rett deler ut slurk",
+    "Sett på en timer på egenvalgt tid som kun DU vet om. Når timeren går må alle ha drukket opp glasset sitt, hvis ikke må de chugge. Perfekt å ha i bakgrunnen.",
+    "Drikk anntall søsken du har",
+    "Del ut 4 slurker",
+    "Ta 5 slurker",
+    "Hvem skal bli full idag? SKÅÅÅL",
+    "Drikk antall slurker som første siffer i tlf nummeret ditt",
+    "Alle single drikker",
+    "Hvem har det fineste smilet",
+    "Høyeste jenta og laveste gutten tar bonski",
+    "De som sitter på mobilen drikker",
+    "Hvem har flest bilder i kamerarullen (den drikker)",
+    "Hvem har flest selfies på kamerarullen (den drikker)",
+    "Hvem er snaphoe (høyest score drikker 3 slurker)",
+    "Hvem er tinderhoe",
+    "thunder eller låne penga",
+    "pisk meg",
+
+
+
+
+
+
+
 ];
 
 // Liste med spørsmål for spill 2
@@ -16,7 +40,22 @@ var sporsmalListe2 = [
     "Gjør som Oda å CHUGGG!",
     "SHOT",
     "Its giving old, eldste drikker",
-    "You are the dancing queen, vis ditt beste danse move💃"
+    "You are the dancing queen, vis ditt beste danse move💃",
+    "Gris",
+    "Hvem er den største fyllikeren",
+    "Tenker det er på tide med litt musikk, sett på 'Rattlin'Bog'",
+    "Sett på en timer på egenvalgt tid som kun DU vet om. Når timeren går må alle ha drukket opp glasset sitt, hvis ikke må de chugge. Perfekt å ha i bakgrunnen.",
+    "Hvem fyllesnapper mest",
+    "Drikk antall slurker du har har hooket med i rommet",
+    "Alle tar en STOR slurk",
+    "Du og naboene dine tar en slurk.",
+    "Hvem får kjæreste ila året",
+    "Ta en drikkesang",
+
+
+
+
+
 ];
 
 var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål

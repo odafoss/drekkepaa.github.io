@@ -5,31 +5,59 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>drækka på</title> 
     <link rel="stylesheet" href="css.css">
+    <style>
+        /* Legg til litt avstand mellom regler og spillknappene */
+        .rules-link {
+            margin-bottom: 20px;
+        }
+
+        /* Stil for Regler-knappen */
+        .rules-button {
+            padding: 10px 20px;
+            background-color: #8ac3ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none; /* Fjern understrekning fra lenken */
+            display: inline-block;
+        }
+
+        /* Endre fargen på knappen når musen svever over den */
+        .rules-button:hover {
+            background-color: #81e2ff;
+        }
+    </style>
     <script src="https://pixijs.download/release/pixi.min.js"></script>
 </head>
 <body>
 
 <div class="container">
     <h1>Velg et spill:</h1>
+
+    <!-- Lenk til reglene som en knapp -->
+    <div class="rules-link">
+        <a href="regler.html" class="rules-button">Regler</a>
+    </div>
+
     <div class="game-options">
         <a href="spill1.html"><button id="spill1">Icebreaker</button></a>
         <a href="spill2.html"><button id="spill2">Få det på</button></a>
         <a href="spill3.html"><button id="spill3">På luggeføre</button></a>
         <a href="spill4.html"><button id="spill4">Kanaks dritings</button></a>
-        
     </div>
 
-<div class="image-container">
-    <img src="bilder/skaal.gif">
-
+    <div class="image-container">
+        <img src="bilder/skaal.gif">
+    </div>
 </div>
-</div>
-
 
 <script src="app.js"></script>
 
 </body>
 </html>
+
+
+
 
 
 
