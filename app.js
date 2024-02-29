@@ -31,11 +31,11 @@ function visSporsmal(indeks, sporsmalListe) {
         } else if (sporsmalListe === sporsmalListe2) {
             questionsShown2++;
         }
-    } else {
-        if (sporsmalListe === sporsmalListe1 && questionsShown1 === sporsmalListe1.length) {
-            document.getElementById("sporsmal").innerHTML += "<p>Skål, dere er ferdig med spill 1!</p>";
-        } else if (sporsmalListe === sporsmalListe2 && questionsShown2 === sporsmalListe2.length) {
-            document.getElementById("sporsmal").innerHTML += "<p>Skål, dere er ferdig med spill 2!</p>";
+        // Vis bildet hvis "Klar?"-meldingen vises
+        if (document.getElementById("sporsmal").innerHTML.includes("Klar?")) {
+            document.getElementById("imageContainer").style.display = "block";
+        } else {
+            document.getElementById("imageContainer").style.display = "none";
         }
     }
 }
@@ -56,6 +56,7 @@ window.onload = function () {
     } else if (spill === "spill2") {
         document.getElementById("sporsmal").innerHTML = "<p>Klar?</p>";
     }
+    document.getElementById("imageContainer").style.display = "none"; // Skjul bildet ved start
 };
 
 // Legg til klikkhendelse for "Neste" -knapp
@@ -73,12 +74,12 @@ document.getElementById("nesteKnapp").addEventListener("click", function () {
 // Legg til klikkhendelse for "Forrige" -knapp
 document.getElementById("forrigeKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1" && currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        visSporsmal(currentQuestionIndex, sporsmalListe1);
-    } else if (spill === "spill2" && currentQuestionIndex > 0) {
-        currentQuestionIndex--;
-        visSporsmal(currentQuestionIndex, sporsmalListe2);
+    if (spill === "spill1" && currentQuestionIndex1 > 0) {
+        currentQuestionIndex1--;
+        visSporsmal(currentQuestionIndex1, sporsmalListe1);
+    } else if (spill === "spill2" && currentQuestionIndex2 > 0) {
+        currentQuestionIndex2--;
+        visSporsmal(currentQuestionIndex2, sporsmalListe2);
     }
 });
 
@@ -86,6 +87,9 @@ document.getElementById("forrigeKnapp").addEventListener("click", function () {
 document.getElementById("tilbakeTekst").addEventListener("click", function () {
     window.location.href = "index.html"; // Sender brukeren tilbake til hovedsiden
 });
+
+
+
 
 
 

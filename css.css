@@ -123,3 +123,19 @@ button:hover {
     font-weight: bold;
     margin-top: 20px;
 }
+
+#imageContainer {
+    text-align: center;
+    /* Sentrer bildet horisontalt */
+    margin-top: 200px;
+    /* Legg til litt toppmarg for å skille fra teksten */
+}
+
+#hiddenImage {
+    max-width: 100px;
+    /* Begrens maksimal bredde til 200 piksler */
+    height: auto;
+    /* La høyden skaleres automatisk for å opprettholde proporsjonene */
+    display: none;
+
+}
