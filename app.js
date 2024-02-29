@@ -7,22 +7,29 @@ var sporsmalListe1 = [
     "Hva er din mest pinlige drikkehistorie?",
     "Hvis du kunne reise hvor som helst i verden, hvor ville du dratt?",
     "Hva er den rareste drømmen du har hatt?",
-    "Del en morsom historie fra din siste fyllekveld."
+    "Del en morsom historie fra din siste fyllekveld.",
+
 ];
 
 // Liste med spørsmål for spill 2
 var sporsmalListe2 = [
     "FIREBALL🔥",
-    "Gjør som Oda å CHUGGG!",
-    "SHOT"
+    "Gjør som Oda og CHUGGG!",
+    "SHOT",
+
 ];
 
 var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål
 
 // Funksjon for å vise spørsmålet basert på hvilket spill det er
 function visSporsmal(indeks, sporsmalListe) {
-    document.getElementById("sporsmal").innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
+    if (indeks < sporsmalListe.length - 1) {
+        document.getElementById("sporsmal").innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
+    } else {
+        document.getElementById("sporsmal").innerHTML = "<p> Skål! Det var siste spørsmål!</p>";
+    }
 }
+
 
 // Funksjon for å blande spørsmålslisten
 function blandSporsmalListe(sporsmalListe) {
@@ -72,6 +79,31 @@ document.getElementById("forrigeKnapp").addEventListener("click", function () {
 document.getElementById("tilbakeTekst").addEventListener("click", function () {
     window.location.href = "index.html"; // Sender brukeren tilbake til hovedsiden
 });
+
+// Funksjon for å vise spørsmålet basert på hvilket spill det er
+function visSporsmal(indeks, sporsmalListe) {
+    var sporsmalElement = document.getElementById("sporsmal");
+
+    if (indeks < sporsmalListe.length - 1) {
+        sporsmalElement.innerHTML = "<p>" + sporsmalListe[indeks] + "</p>";
+        sporsmalElement.style.backgroundColor = ""; // Tilbakestill bakgrunnsfargen
+        clearInterval(blinkInterval); // Stopp blinkingen hvis den allerede er i gang
+    } else {
+        sporsmalElement.innerHTML = "<p>Du har besvart alle spørsmålene!</p>";
+        sporsmalElement.style.backgroundColor = "pink"; // Endre bakgrunnsfargen til 
+        startBlinking(); // Start blinkingen
+    }
+}
+
+// Funksjon for å starte blinkingen av bilde
+function startBlinking() {
+    var blinkingImage = document.getElementById("blinkingImage");
+    var blinkInterval = setInterval(function () {
+        blinkingImage.style.visibility = (blinkingImage.style.visibility == 'hidden' ? '' : 'hidden');
+    }, 500); // Blink hvert 0.5 sekund (500 millisekunder)
+}
+
+
 
 
 
