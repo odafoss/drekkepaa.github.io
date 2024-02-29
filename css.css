@@ -83,4 +83,43 @@ button:hover {
         margin: 5px;
         /* Reduser margen rundt bildene for mindre skjermer */
     }
+
+}
+
+#sporsmal {
+
+    color: #000000;
+    /* Endre fargen på spørsmålteksten til grønn */
+    font-size: 50px;
+    /* Juster fontstørrelsen etter behov */
+    font-weight: bold;
+    /* Gjør teksten fet for å fremheve den */
+}
+
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#forrigeKnapp,
+#nesteKnapp {
+    flex-grow: 0;
+    /* Forhindrer knappene fra å strekke seg */
+    max-width: 100px;
+    /* Angi en maksimal bredde for knappene */
+}
+
+#tilbakeTekst {
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 20px;
 }
