@@ -73,12 +73,12 @@ document.getElementById("nesteKnapp").addEventListener("click", function () {
 // Legg til klikkhendelse for "Forrige" -knapp
 document.getElementById("forrigeKnapp").addEventListener("click", function () {
     var spill = document.body.className; // Henter klassenavnet til body-elementet
-    if (spill === "spill1" && currentQuestionIndex1 > 0) {
-        currentQuestionIndex1--;
-        visSporsmal(currentQuestionIndex1, sporsmalListe1);
-    } else if (spill === "spill2" && currentQuestionIndex2 > 0) {
-        currentQuestionIndex2--;
-        visSporsmal(currentQuestionIndex2, sporsmalListe2);
+    if (spill === "spill1" && currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        visSporsmal(currentQuestionIndex, sporsmalListe1);
+    } else if (spill === "spill2" && currentQuestionIndex > 0) {
+        currentQuestionIndex--;
+        visSporsmal(currentQuestionIndex, sporsmalListe2);
     }
 });
 
