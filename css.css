@@ -1,10 +1,4 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: rgb(255, 239, 253);
-}
-
+/* Vanlig stil for desktop */
 .container {
     text-align: center;
     margin-top: 50px;
@@ -37,10 +31,8 @@ button {
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
-    /* Plasser knappene under hverandre */
     width: 100%;
-    /* Sørg for at knappene strekker seg over hele bredden av containeren */
-
+    /* Plasser knappene under hverandre */
 }
 
 button:hover {
@@ -50,7 +42,12 @@ button:hover {
 
 .image-container {
     display: flex;
-    /* Bruk flex-boks for å enkelt plassere bildene ved siden av hverandre */
+    justify-content: center;
+    /* Sentrer bildene horisontalt */
+    align-items: flex-start;
+    /* Plasser bildene øverst */
+    margin-top: 20px;
+    /* Juster etter behov for å øke avstanden fra toppen */
 }
 
 .image-container img {
@@ -62,13 +59,28 @@ button:hover {
     /* Legg til en margin rundt bildene for luft */
 }
 
-.image-container {
-    display: float;
-    justify-content: center;
-    /* Sentrer bildene horisontalt */
-    align-items: flex-start;
-    /* Plasser bildene øverst */
-    margin-top: 0xpx;
-    /* Juster etter behov for å øke avstanden fra toppen */
+/* Media Query for mobil */
+@media only screen and (max-width: 600px) {
+    .container {
+        width: 90%;
+        /* Endre bredden på containeren for mindre skjermer */
+        height: auto;
+        /* La høyden tilpasse seg innholdet */
+        padding: 10px;
+        /* Reduser padding for mindre skjermer */
+        margin-top: 20px;
+        /* Juster toppmargin for mindre skjermer */
+    }
 
+    button {
+        font-size: 16px;
+        /* Reduser fontstørrelsen for knappene på mindre skjermer */
+    }
+
+    .image-container img {
+        width: 100px;
+        /* Reduser størrelsen på bildene for mindre skjermer */
+        margin: 5px;
+        /* Reduser margen rundt bildene for mindre skjermer */
+    }
 }
