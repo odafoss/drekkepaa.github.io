@@ -11,7 +11,7 @@ var sporsmalListe1 = [
     "Sett på en timer på egenvalgt tid som kun DU vet om. Når timeren går må alle ha drukket opp glasset sitt, hvis ikke må de chugge. Perfekt å ha i bakgrunnen.",
     "Drikk antall søsken du har",
     "Del ut 4 slurker",
-    "Ta 5 slurker",
+    "Drikk 5 slurker",
     "Hvem skal bli full idag? SKÅÅÅL",
     "Drikk antall slurker som første siffer i tlf nummeret ditt",
     "Alle single drikker",
@@ -24,8 +24,7 @@ var sporsmalListe1 = [
     "Hvem er tinderhoe",
     "thunder eller låne penga",
     "pisk meg",
-
-
+    "velg en hemmelig drikkevenn, blir dere oppdaget må du chugge"
 
 
 
