@@ -49,6 +49,8 @@ var sporsmalListe2 = [
     "Du og naboene dine tar en slurk.",
     "Hvem får kjæreste ila året",
     "Ta en drikkesang",
+    "googgo gaggaa, yngste drikker",
+    ""
 
 
 
