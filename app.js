@@ -24,7 +24,10 @@ var sporsmalListe1 = [
     "Hvem er tinderhoe",
     "thunder eller låne penga",
     "pisk meg",
-    "velg en hemmelig drikkevenn, blir dere oppdaget må du chugge"
+    "velg en hemmelig drikkevenn, blir dere oppdaget må du chugge",
+    "Alle med kjæreste drikker",
+    "Alle i et situationship drikker",
+    "Navneleken, går med klokka og må nevne alle navn før deg også ditt navn"
 
 
 
@@ -50,7 +53,7 @@ var sporsmalListe2 = [
     "Hvem får kjæreste ila året",
     "Ta en drikkesang",
     "googgo gaggaa, yngste drikker",
-    ""
+
 
 
 
