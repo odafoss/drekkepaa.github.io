@@ -53,7 +53,7 @@ var sporsmalListe2 = [
     "Hvem får kjæreste ila året",
     "Ta en drikkesang",
     "googgo gaggaa, yngste drikker",
-    "Bursdagsjenta ser litt tørst ut, TA EN SHOT"
+
 
 
 
