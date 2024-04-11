@@ -73,18 +73,20 @@ button:hover {
         width: 100px;
         margin: 5px;
     }
+
+    h1 {
+        margin-bottom: 10px;
+        /* Juster bunnmargin for overskriften */
+    }
 }
 
 #sporsmal {
-
     color: #000000;
-    /* Endre fargen på spørsmålteksten til grønn */
     font-size: 50px;
     /* Juster fontstørrelsen etter behov */
     font-weight: bold;
     /* Gjør teksten fet for å fremheve den */
 }
-
 
 /*knapp til sidan*/
 .container {
@@ -102,7 +104,6 @@ button:hover {
 #forrigeKnapp,
 #nesteKnapp {
     flex-grow: 0;
-    /* Forhindrer knappene fra å strekke seg */
     max-width: 100px;
     /* Angi en maksimal bredde for knappene */
 }
@@ -216,30 +217,4 @@ button {
         margin-bottom: 20px;
         /* Øker avstanden fra overskriften til spillvalgene */
     }
-
-    /* Legg til litt avstand mellom regler og spillknappene */
-    .rules-link {
-        margin-bottom: 20px;
-    }
-
-    /* Stil for Regler-knappen */
-    .rules-button {
-        padding: 10px 20px;
-        background-color: #8ac3ff;
-        color: white;
-        border: none;
-        border-radius: 5px;
-        text-decoration: none;
-        /* Fjern understrekning fra lenken */
-        display: inline-block;
-    }
-
-    /* Endre fargen på knappen når musen svever over den */
-    .rules-button:hover {
-        background-color: #81e2ff;
-    }
-
-
-
-
 }
