@@ -217,6 +217,29 @@ button {
         /* Øker avstanden fra overskriften til spillvalgene */
     }
 
+    /* Legg til litt avstand mellom regler og spillknappene */
+    .rules-link {
+        margin-bottom: 20px;
+    }
+
+    /* Stil for Regler-knappen */
+    .rules-button {
+        padding: 10px 20px;
+        background-color: #8ac3ff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        text-decoration: none;
+        /* Fjern understrekning fra lenken */
+        display: inline-block;
+    }
+
+    /* Endre fargen på knappen når musen svever over den */
+    .rules-button:hover {
+        background-color: #81e2ff;
+    }
+
+
 
 
 }
