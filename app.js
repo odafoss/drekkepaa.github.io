@@ -21,25 +21,27 @@ var sporsmalListe1 = [
     "Hvem har flest bilder i kamerarullen (den drikker)",
     "Hvem har flest selfies på kamerarullen (den drikker)",
     "Hvem er snaphoe (høyest score drikker 3 slurker)",
+    "Hvem er snapnonne (Lavest snapscore tar 3 slurker)",
     "Hvem er tinderhoe",
     "thunder eller låne penga",
     "pisk meg",
     "velg en hemmelig drikkevenn, blir dere oppdaget må du chugge",
     "Alle med kjæreste drikker",
     "Alle i et situationship drikker",
-    "Navneleken, går med klokka og må nevne alle navn før deg også ditt navn"
-
-
-
-
-
+    "Navneleken, går med klokka og må nevne alle navn før deg også ditt navn",
+    "Alle som drikker øl",
+    "Alle som har hatt corona",
+    "alle gutter drikker",
+    "alle jenter drikker",
+    "Håndbak med personen til venstre for deg",
+    "personen med lengst snapstreak deler ut 5 slurker"
 ];
 
 // Liste med spørsmål for spill 2
 var sporsmalListe2 = [
     "FIREBALL🔥",
-    "Gjør som Oda å CHUGGG!",
-    "SHOT",
+    "Gjør som Oda å CHUGGG! (on the spot)",
+    "lin lin er fysen på noe godt, ta en shot med henne",
     "Its giving old, eldste drikker",
     "You are the dancing queen, vis ditt beste danse move💃",
     "Gris",
@@ -53,13 +55,22 @@ var sporsmalListe2 = [
     "Hvem får kjæreste ila året",
     "Ta en drikkesang",
     "googgo gaggaa, yngste drikker",
-
-
-
-
-
-
-
+    "Alle bondeknøler drikk (ikke fra oslo)",
+    "De som liker oliven (en slurk)",
+    "alle som drikker noe boblene, cider inkludert drikker",
+    "alle med blå/grønne øyne",
+    "alle som er høyre enn DQ",
+    "Alle som spilte fotball når de var yngre",
+    "Alle som har vært på stripperklubb",
+    "alle med brune øyne",
+    "Alle som har trent denne uken",
+    "alle som ikke har trent denne uken",
+    "alle som har jobbet på dagligvarebutikk",
+    "De som ikke klarer å skrive hele navnet til DQ",
+    "pekelek,hvem er mest nerd",
+    "pekelek, hvem er største råner",
+    "pekelek, hvem er lemmen",
+    "pekelek, hvem har værst musikksmak"
 ];
 
 var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål
