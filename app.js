@@ -34,7 +34,36 @@ var sporsmalListe1 = [
     "alle gutter drikker",
     "alle jenter drikker",
     "Håndbak med personen til venstre for deg",
-    "personen med lengst snapstreak deler ut 5 slurker"
+    "personen med lengst snapstreak deler ut 5 slurker",
+    "Alle som har blitt dumpet",
+    "Alle som har dumpet",
+    "alle jenter skåler",
+    "alle gutter skåler",
+    "hvem lever  virkelig studentlivet",
+    "Vgs vs Uni (Tommel opp/Tommel Ned. Mindre tallet drikker.)",
+    "jeg har aldri danset på bordet på heidis",
+    "hvem ville du laget podcast med",
+    "hvem søler mest på vors",
+    "jeg har aldri blitt nektet inngang på byen",
+    "jeg har aldri stjelt på vors",
+    "hvem ser best ut i kveld",
+    "send streak til noen du ikke snapper med",
+    "sett deg i hotseat",
+    " Gå på vsco og repost et gammelt bilde av noen andre",
+    "Du må snakke engelsk resten av leken.",
+    "hvem har fineste øyne",
+    "hvem er morsomt",
+    "hvem lukter best",
+    "hvem har finest smil",
+    "Hvem blir mest likt av nye personer?",
+    "Hvem er mest fotogen?",
+    "største milfen når den tid kommer",
+    "største dilfen",
+    "svigermors/svigerfars drøm?",
+    "Gjør en slampoesipreformance"
+
+
+
 ];
 
 // Liste med spørsmål for spill 2
@@ -59,7 +88,7 @@ var sporsmalListe2 = [
     "De som liker oliven (en slurk)",
     "alle som drikker noe boblene, cider inkludert drikker",
     "alle med blå/grønne øyne",
-    "alle som er høyre enn DQ",
+    "alle som er høyre enn DQ (ta en slurk)",
     "Alle som spilte fotball når de var yngre",
     "Alle som har vært på stripperklubb",
     "alle med brune øyne",
@@ -70,7 +99,31 @@ var sporsmalListe2 = [
     "pekelek,hvem er mest nerd",
     "pekelek, hvem er største råner",
     "pekelek, hvem er lemmen",
-    "pekelek, hvem har værst musikksmak"
+    "pekelek, hvem har værst musikksmak",
+    "vi minnes de som ikke er her idag, skål for HL idag",
+    "jeg har aldri hatt trekant",
+    "jeg har aldri ligget med en venn av broren/søsteren min",
+    "hvem snakker minst",
+    "hvem snakker mest",
+    "har problemer å holde en hemmlighet",
+    "Hvem er mest på instagram? (Drikk og lik et gammelt bilde til den du nyligst har søkt opp)",
+    "Ville hatt sex først på paradise hotel (Drikk som du mener det 110% og velg en drikkepartner du skal ha ut spillet)",
+    "Mest glemsk? (Vi får se om du glemmer denne kvelden, chug resten av drikka)",
+    "Har den verste eksen? (Drikk tre slurker og vær glad for at den tid er over)",
+    "send mld til en på tinder og skriv 'møt meg/date?'",
+    "vis det siste bilde på nylig slettet, eller chug/shot",
+    "guilty pleasure sang",
+    "har du ligget med noen på snaplista di?",
+    "varm opp karaokestemmen, og syng et refreng uten musikk",
+    "Poke exen din på facebook (om dette ikke er mulig så skriver du poke på Messenger og trykker send",
+    "hvem drar hjem, med noen idag?",
+    "hvem havner oftes i grøfta",
+    "hvem blir rikest",
+    "hvem blir uteligger",
+    "Sølibat i 1 år eller dårlig sex i 1 år",
+    "hvem er mest delulu",
+    "hvem vil overleve på en ødeøy"
+
 ];
 
 var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål

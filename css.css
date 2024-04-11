@@ -3,7 +3,6 @@
     text-align: center;
     margin-top: 50px;
     width: 500px;
-    height: 700px;
     border-radius: 10px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
@@ -12,6 +11,8 @@
 
 h1 {
     font-size: 24px;
+    margin-bottom: 20px;
+    /* Legg til litt bunnmargin for å skille overskriften fra innholdet */
 }
 
 .game-options {
@@ -32,7 +33,10 @@ button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
     width: 100%;
-    /* Plasser knappene under hverandre */
+    max-width: 200px;
+    /* Begrens maksimal bredde */
+    margin-left: auto;
+    margin-right: auto;
 }
 
 button:hover {
@@ -42,48 +46,33 @@ button:hover {
 
 .image-container {
     display: flex;
-    justify-content: center;
-    /* Sentrer bildene horisontalt */
-    align-items: flex-start;
-    /* Plasser bildene øverst */
+    justify-content: space-between;
+    /* Plasser elementene på hver side av containeren */
     margin-top: 20px;
-    /* Juster etter behov for å øke avstanden fra toppen */
 }
 
 .image-container img {
     width: 150px;
-    /* Juster bredden på bildene etter behov */
     height: auto;
-    /* La høyden justeres automatisk for å opprettholde proporsjonene */
     margin: 10px;
-    /* Legg til en margin rundt bildene for luft */
 }
 
 /* Media Query for mobil */
 @media only screen and (max-width: 600px) {
     .container {
         width: 90%;
-        /* Endre bredden på containeren for mindre skjermer */
-        height: auto;
-        /* La høyden tilpasse seg innholdet */
         padding: 10px;
-        /* Reduser padding for mindre skjermer */
         margin-top: 20px;
-        /* Juster toppmargin for mindre skjermer */
     }
 
     button {
         font-size: 16px;
-        /* Reduser fontstørrelsen for knappene på mindre skjermer */
     }
 
     .image-container img {
         width: 100px;
-        /* Reduser størrelsen på bildene for mindre skjermer */
         margin: 5px;
-        /* Reduser margen rundt bildene for mindre skjermer */
     }
-
 }
 
 #sporsmal {
@@ -227,4 +216,7 @@ button {
         margin-bottom: 20px;
         /* Øker avstanden fra overskriften til spillvalgene */
     }
+
+
+
 }
