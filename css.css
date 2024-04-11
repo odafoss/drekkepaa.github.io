@@ -121,5 +121,110 @@ button:hover {
 #tilbakeTekst {
     font-size: 16px;
     font-weight: bold;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: -10px;
+    /* Øker avstanden fra teksten */
+}
+
+.bildehl img,
+.oda img {
+    max-width: 80px;
+    /* Endre størrelsen på bildene etter ønske */
+    height: auto;
+    /* Beholder proporsjonene */
+}
+
+.bildehl {
+    position: absolute;
+    left: 0;
+    /* Plasserer bildehl helt til venstre */
+    margin-right: 0px;
+    /* Legger til en margin mellom bildene */
+}
+
+.oda {
+    position: absolute;
+    right: 0;
+    /* Plasserer oda helt til høyre */
+}
+
+.game-options {
     margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 8px 10px;
+    font-size: 18px;
+    margin: 5px;
+    cursor: pointer;
+    background-color: pink;
+    color: #000000;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    /* Full bredde */
+    max-width: 200px;
+    /* Maksimal bredde */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+
+    .bildehl img,
+    .oda img {
+        max-width: 30px;
+        /* Reduser størrelsen på bildene for mindre skjermer */
+    }
+
+    .bildehl {
+        margin-right: 20px;
+        /* Legger til en mindre margin mellom bildene for mindre skjermer */
+    }
+
+    .game-options {
+        margin-top: 20px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        /* Justerer starten av elementene vertikalt */
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 20px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin-top: 0;
+        /* Nullstiller standardmarginen for h1 */
+        margin-bottom: 20px;
+        /* Øker avstanden fra overskriften til spillvalgene */
+    }
 }
