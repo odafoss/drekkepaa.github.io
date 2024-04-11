@@ -3,6 +3,7 @@
     text-align: center;
     margin-top: 50px;
     width: 500px;
+    /* Fjern denne linjen */
     border-radius: 10px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
@@ -244,29 +245,4 @@ button {
     .image-container img {
         width: 150px;
         height: auto;
-        margin: 10px;
-    }
-
-    /* Media Query for mobil */
-    @media only screen and (max-width: 600px) {
-        .container {
-            width: 90%;
-            padding: 10px;
-            margin-top: 20px;
-        }
-
-        button {
-            font-size: 16px;
-        }
-
-        .image-container img {
-            width: 100px;
-            margin: 5px;
-        }
-
-        h1 {
-            margin-bottom: 10px;
-        }
-    }
-
-}
+        margin: 10px
