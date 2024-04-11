@@ -3,7 +3,7 @@
     text-align: center;
     margin-top: 50px;
     width: 500px;
-    /* Fjern denne linjen */
+    height: 700px;
     border-radius: 10px;
     box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
     margin: 50px auto;
@@ -12,8 +12,6 @@
 
 h1 {
     font-size: 24px;
-    margin-bottom: 20px;
-    /* Legg til litt bunnmargin for å skille overskriften fra innholdet */
 }
 
 .game-options {
@@ -34,10 +32,7 @@ button {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: block;
     width: 100%;
-    max-width: 200px;
-    /* Begrens maksimal bredde */
-    margin-left: auto;
-    margin-right: auto;
+    /* Plasser knappene under hverandre */
 }
 
 button:hover {
@@ -47,47 +42,60 @@ button:hover {
 
 .image-container {
     display: flex;
-    justify-content: space-between;
-    /* Plasser elementene på hver side av containeren */
+    justify-content: center;
+    /* Sentrer bildene horisontalt */
+    align-items: flex-start;
+    /* Plasser bildene øverst */
     margin-top: 20px;
+    /* Juster etter behov for å øke avstanden fra toppen */
 }
 
 .image-container img {
     width: 150px;
+    /* Juster bredden på bildene etter behov */
     height: auto;
+    /* La høyden justeres automatisk for å opprettholde proporsjonene */
     margin: 10px;
+    /* Legg til en margin rundt bildene for luft */
 }
 
 /* Media Query for mobil */
 @media only screen and (max-width: 600px) {
     .container {
         width: 90%;
+        /* Endre bredden på containeren for mindre skjermer */
+        height: auto;
+        /* La høyden tilpasse seg innholdet */
         padding: 10px;
+        /* Reduser padding for mindre skjermer */
         margin-top: 20px;
+        /* Juster toppmargin for mindre skjermer */
     }
 
     button {
         font-size: 16px;
+        /* Reduser fontstørrelsen for knappene på mindre skjermer */
     }
 
     .image-container img {
         width: 100px;
+        /* Reduser størrelsen på bildene for mindre skjermer */
         margin: 5px;
+        /* Reduser margen rundt bildene for mindre skjermer */
     }
 
-    h1 {
-        margin-bottom: 10px;
-        /* Juster bunnmargin for overskriften */
-    }
 }
 
 #sporsmal {
+
     color: #000000;
+    /* Endre fargen på spørsmålteksten til grønn */
     font-size: 50px;
     /* Juster fontstørrelsen etter behov */
     font-weight: bold;
     /* Gjør teksten fet for å fremheve den */
 }
+
 
 /*knapp til sidan*/
 .container {
@@ -105,6 +113,7 @@ button:hover {
 #forrigeKnapp,
 #nesteKnapp {
     flex-grow: 0;
+    /* Forhindrer knappene fra å strekke seg */
     max-width: 100px;
     /* Angi en maksimal bredde for knappene */
 }
@@ -112,137 +121,3 @@ button:hover {
 #tilbakeTekst {
     font-size: 16px;
     font-weight: bold;
-}
-
-.container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 50px;
-    margin-bottom: -10px;
-    /* Øker avstanden fra teksten */
-}
-
-.bildehl img,
-.oda img {
-    max-width: 80px;
-    /* Endre størrelsen på bildene etter ønske */
-    height: auto;
-    /* Beholder proporsjonene */
-}
-
-.bildehl {
-    position: absolute;
-    left: 0;
-    /* Plasserer bildehl helt til venstre */
-    margin-right: 0px;
-    /* Legger til en margin mellom bildene */
-}
-
-.oda {
-    position: absolute;
-    right: 0;
-    /* Plasserer oda helt til høyre */
-}
-
-.game-options {
-    margin-top: 20px;
-    text-align: center;
-}
-
-button {
-    padding: 8px 10px;
-    font-size: 18px;
-    margin: 5px;
-    cursor: pointer;
-    background-color: pink;
-    color: #000000;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    width: 100%;
-    /* Full bredde */
-    max-width: 200px;
-    /* Maksimal bredde */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.button-container {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-@media only screen and (max-width: 600px) {
-
-    .bildehl img,
-    .oda img {
-        max-width: 30px;
-        /* Reduser størrelsen på bildene for mindre skjermer */
-    }
-
-    .bildehl {
-        margin-right: 20px;
-        /* Legger til en mindre margin mellom bildene for mindre skjermer */
-    }
-
-    .game-options {
-        margin-top: 20px;
-    }
-
-    .container {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        align-items: flex-start;
-        /* Justerer starten av elementene vertikalt */
-        margin-top: 50px;
-        margin-bottom: 20px;
-        padding: 20px;
-    }
-
-    .image-container {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-    }
-
-    h1 {
-        font-size: 24px;
-        margin-top: 0;
-        /* Nullstiller standardmarginen for h1 */
-        margin-bottom: 20px;
-        /* Øker avstanden fra overskriften til spillvalgene */
-    }
-
-    /* Vanlig stil for desktop */
-    .container {
-        text-align: center;
-        margin-top: 50px;
-        width: 80%;
-        /* Endre bredden til ønsket størrelse, f.eks. 80% */
-        max-width: 800px;
-        /* Begrens maksimal bredden */
-        border-radius: 10px;
-        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
-        margin: 50px auto;
-        padding: 20px;
-    }
-
-    .image-container {
-        display: flex;
-        justify-content: center;
-        /* Sentrer elementene */
-        flex-wrap: wrap;
-        /* Tillat innholdet å gå til neste linje hvis det ikke får plass */
-        margin-top: 20px;
-    }
-
-    .image-container img {
-        width: 150px;
-        height: auto;
-        margin: 10px
