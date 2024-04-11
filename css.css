@@ -217,4 +217,56 @@ button {
         margin-bottom: 20px;
         /* Øker avstanden fra overskriften til spillvalgene */
     }
+
+    /* Vanlig stil for desktop */
+    .container {
+        text-align: center;
+        margin-top: 50px;
+        width: 80%;
+        /* Endre bredden til ønsket størrelse, f.eks. 80% */
+        max-width: 800px;
+        /* Begrens maksimal bredden */
+        border-radius: 10px;
+        box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+        margin: 50px auto;
+        padding: 20px;
+    }
+
+    .image-container {
+        display: flex;
+        justify-content: center;
+        /* Sentrer elementene */
+        flex-wrap: wrap;
+        /* Tillat innholdet å gå til neste linje hvis det ikke får plass */
+        margin-top: 20px;
+    }
+
+    .image-container img {
+        width: 150px;
+        height: auto;
+        margin: 10px;
+    }
+
+    /* Media Query for mobil */
+    @media only screen and (max-width: 600px) {
+        .container {
+            width: 90%;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            font-size: 16px;
+        }
+
+        .image-container img {
+            width: 100px;
+            margin: 5px;
+        }
+
+        h1 {
+            margin-bottom: 10px;
+        }
+    }
+
 }
