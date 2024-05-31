@@ -24,7 +24,7 @@ var sporsmalListe1 = [
     "Hvem er snapnonne (Lavest snapscore tar 3 slurker)",
     "Hvem er tinderhoe",
     "thunder eller låne penga",
-    "pisk meg",
+    "Pisk meg",
     "velg en hemmelig drikkevenn, blir dere oppdaget må du chugge",
     "Alle med kjæreste drikker",
     "Alle i et situationship drikker",
@@ -34,7 +34,7 @@ var sporsmalListe1 = [
     "alle gutter drikker",
     "alle jenter drikker",
     "Håndbak med personen til venstre for deg",
-    "personen med lengst snapstreak deler ut 5 slurker",
+    "Personen med lengst snapstreak deler ut 5 slurker",
     "Alle som har blitt dumpet",
     "Alle som har dumpet",
     "alle jenter skåler",
@@ -49,7 +49,7 @@ var sporsmalListe1 = [
     "hvem ser best ut i kveld",
     "send streak til noen du ikke snapper med",
     "sett deg i hotseat",
-    " Gå på vsco og repost et gammelt bilde av noen andre",
+    "Gå på vsco og repost et gammelt bilde av noen andre",
     "Du må snakke engelsk resten av leken.",
     "hvem har fineste øyne",
     "hvem er morsomt",
@@ -60,7 +60,21 @@ var sporsmalListe1 = [
     "største milfen når den tid kommer",
     "største dilfen",
     "svigermors/svigerfars drøm?",
-    "Gjør en slampoesipreformance"
+    "Gjør en slampoesi preformance",
+    "alle som har bursdag i juni,juni og august drikk",
+    "alle som har bursdag i sep-nov drikk",
+    "alle som har bursdag i des-feb",
+    "alle som har bursdag i mars-mai",
+    "den som kom senest tar 3 sluker",
+    "hvem digger du mest i rommet",
+    "hvem er mest utadvent, drikk og hold en tale",
+    "mest flørtene? gi et kyss til personen på venstre",
+    "hvem kunne spydd av tre shots?(ta en shot)",
+    "mest fotogen? legg ut en selfie på privstory",
+    "hvem får flest barn?",
+    "drikk sluker, det er mellom deg og personen som leser,"
+
+
 
 
 
@@ -100,7 +114,7 @@ var sporsmalListe2 = [
     "pekelek, hvem er største råner",
     "pekelek, hvem er lemmen",
     "pekelek, hvem har værst musikksmak",
-    "vi minnes de som ikke er her idag, skål for HL idag",
+    "vi minnes de som ikke er her ved oss idag, skål for ... (navn) idag",
     "jeg har aldri hatt trekant",
     "jeg har aldri ligget med en venn av broren/søsteren min",
     "hvem snakker minst",
@@ -110,7 +124,7 @@ var sporsmalListe2 = [
     "Ville hatt sex først på paradise hotel (Drikk som du mener det 110% og velg en drikkepartner du skal ha ut spillet)",
     "Mest glemsk? (Vi får se om du glemmer denne kvelden, chug resten av drikka)",
     "Har den verste eksen? (Drikk tre slurker og vær glad for at den tid er over)",
-    "send mld til en på tinder og skriv 'møt meg/date?'",
+    "en må skrive en melding for deg på din tinder, eller lage en bio",
     "vis det siste bilde på nylig slettet, eller chug/shot",
     "guilty pleasure sang",
     "har du ligget med noen på snaplista di?",
@@ -122,7 +136,14 @@ var sporsmalListe2 = [
     "hvem blir uteligger",
     "Sølibat i 1 år eller dårlig sex i 1 år",
     "hvem er mest delulu",
-    "hvem vil overleve på en ødeøy"
+    "hvem vil overleve på en ødeøy",
+    "alle som satt på 1c under eksamen må drikke",
+    "alle som heter johannes drikker",
+    "kjøttbollene drikker",
+    "hvem studerer anvedt bare for lønna",
+    "hvem bruker minst tid på skole",
+
+
 
 ];
 
