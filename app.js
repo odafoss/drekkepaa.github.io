@@ -74,10 +74,6 @@ var sporsmalListe1 = [
     "hvem får flest barn?",
     "drikk sluker, det er mellom deg og personen som leser,"
 
-
-
-
-
 ];
 
 // Liste med spørsmål for spill 2
@@ -92,7 +88,6 @@ var sporsmalListe2 = [
     "Tenker det er på tide med litt musikk, sett på 'Rattlin'Bog'",
     "Sett på en timer på egenvalgt tid som kun DU vet om. Når timeren går må alle ha drukket opp glasset sitt, hvis ikke må de chugge. Perfekt å ha i bakgrunnen.",
     "Hvem fyllesnapper mest",
-    "Drikk antall slurker du har har hooket med i rommet",
     "Alle tar en STOR slurk",
     "Du og naboene dine tar en slurk.",
     "Hvem får kjæreste ila året",
@@ -102,14 +97,12 @@ var sporsmalListe2 = [
     "De som liker oliven (en slurk)",
     "alle som drikker noe boblene, cider inkludert drikker",
     "alle med blå/grønne øyne",
-    "alle som er høyre enn DQ (ta en slurk)",
     "Alle som spilte fotball når de var yngre",
     "Alle som har vært på stripperklubb",
     "alle med brune øyne",
     "Alle som har trent denne uken",
     "alle som ikke har trent denne uken",
     "alle som har jobbet på dagligvarebutikk",
-    "De som ikke klarer å skrive hele navnet til DQ",
     "pekelek,hvem er mest nerd",
     "pekelek, hvem er største råner",
     "pekelek, hvem er lemmen",
@@ -137,12 +130,19 @@ var sporsmalListe2 = [
     "Sølibat i 1 år eller dårlig sex i 1 år",
     "hvem er mest delulu",
     "hvem vil overleve på en ødeøy",
-    "alle som satt på 1c under eksamen må drikke",
-    "alle som heter johannes drikker",
-    "kjøttbollene drikker",
     "hvem studerer anvedt bare for lønna",
     "hvem bruker minst tid på skole",
 
+
+
+];
+var sporsmalListe3 = [
+    "kjøttbollene drikker",
+    "alle som heter johannes drikker",
+    "alle som satt på 1c under eksamen må drikke",
+    "alle som er høyre enn DQ (ta en slurk)",
+    "Drikk antall slurker du har har hooket med i rommet",
+    "De som ikke klarer å skrive hele navnet til DQ (da quynh",
 
 
 ];
