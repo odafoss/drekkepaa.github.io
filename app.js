@@ -204,7 +204,3 @@ document.getElementById("tilbakeTekst").addEventListener("click", function () {
 });
 
 
-
-
-
-
