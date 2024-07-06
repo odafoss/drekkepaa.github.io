@@ -72,7 +72,22 @@ var sporsmalListe1 = [
     "hvem kunne spydd av tre shots?(ta en shot)",
     "mest fotogen? legg ut en selfie på privstory",
     "hvem får flest barn?",
-    "drikk sluker, det er mellom deg og personen som leser,"
+    "drikk sluker, det er mellom deg og personen som leser",
+    "jeg har aldri rotet med en fadder",
+    "jeg har aldri twerket på byen",
+    "hvem er kun student for å få med seg fadderuken",
+    "hvem er mest sannsyling til å ikke huske noe i morgen",
+    "tatoveringer = antall slurker",
+    "hvem får de største ølbrillene",
+    "hvem ville dødt først i the hunger games",
+    "hvem blir full av en breezer",
+    "hvem blir en sugerbaby",
+    "hvem dømmer noen mest pga stjernetegnet",
+    "alle som har ligge liste på notatene sine",
+    "jeg har aldri hoppet i fallskjerm",
+    "aldri drikket så mye at jeg ble dårlig/besvimte",
+    ""
+
 
 ];
 
@@ -132,11 +147,6 @@ var sporsmalListe2 = [
     "hvem vil overleve på en ødeøy",
     "hvem studerer anvedt bare for lønna",
     "hvem bruker minst tid på skole",
-
-
-
-];
-var sporsmalListe3 = [
     "kjøttbollene drikker",
     "alle som heter johannes drikker",
     "alle som satt på 1c under eksamen må drikke",
@@ -145,8 +155,8 @@ var sporsmalListe3 = [
     "De som ikke klarer å skrive hele navnet til DQ (da quynh",
 
 
-];
 
+];
 var currentQuestionIndex = 0; // Indeks for gjeldende spørsmål
 
 // Funksjon for å vise spørsmålet basert på hvilket spill det er

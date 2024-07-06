@@ -4,12 +4,20 @@ document.addEventListener("DOMContentLoaded", function () {
         "{deltaker}, gi en shot til hosten",
         "{deltaker}, les opp søkelista di på instagram, eller 10 slurker",
         "{deltaker}, dm en kjendis",
-        "{deltaker}, start en conga-linje",
+        "{deltaker}, les opp den siste mld du mottatte",
         "{deltaker}, dans som om ingen ser på i 30 sekunder",
-        "{deltaker}, dans som en kjent person (f.eks. Michael Jackson)",
-        "{deltaker}, få alle til å danse sammen med deg",
-        "{deltaker}, dans rundt i rommet som en ballerina",
-        "{deltaker}, dans til en sang du velger"
+        "{deltaker}, har du noen gang ligget med 2 personer innen 24t",
+        "{deltaker}, hva er første inntrykket ditt av personen til høyre",
+        "{deltaker}, nødt eller sannhet",
+        "{deltaker}, drikk 4 slurker",
+        "{deltaker}, ta den største slurken du klarer",
+        "{deltaker}, del ut 4 slurker",
+        "{deltaker}, personen til høyre for deg bestemmer hvor mange slurker du skal ha",
+        "{deltaker}, personen tvers over deg bestemmer antall slurker dere skal ta ilag",
+        "{deltaker}, drikk antall slurker som aldern din halvert",
+        "{deltaker}, 3 turn offs",
+        "{deltaker}, ",
+
     ];
 
     var currentQuestionIndex = 0;
