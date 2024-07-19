@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", function () {
         "{deltaker}, personen tvers over deg bestemmer antall slurker dere skal ta ilag",
         "{deltaker}, drikk antall slurker som aldern din halvert",
         "{deltaker}, 3 turn offs",
-        "{deltaker}, ",
+        "{deltaker}, ta en shot",
+        "{deltaker}, løp en gang rundt huset eller ta 3 shots",
+        "{deltaker}, finn på en setning og start hviskeleken- om siste mann sier rett setning deler den ut 5 slurker, om ikke deler du ut",
+        "{deltaker}, du har ikke lov å si navnene på deltakerene de neste 10 min, chung om du feiler",
+
 
     ];
 
