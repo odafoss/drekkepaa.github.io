@@ -20,6 +20,19 @@ document.addEventListener("DOMContentLoaded", function () {
         "{deltaker}, løp en gang rundt huset eller ta 3 shots",
         "{deltaker}, finn på en setning og start hviskeleken- om siste mann sier rett setning deler den ut 5 slurker, om ikke deler du ut",
         "{deltaker}, du har ikke lov å si navnene på deltakerene de neste 10 min, chung om du feiler",
+        "{deltaker}, del ut 9 slurker",
+        "{deltaker}, ta en skål med den du ville vært på en øde øy med <3",
+        "{deltaker}, kom opp med en vits innen 8 sekunder (hvis ingen ler, må du drikke 4 slurker",
+        "{deltaker}, nevn 3 ord personen over deg ofte sier, hvis du klarer det må personen som blir gjentatt drikke 5 slurker, hvis du ikke klarer det må du drikke 10",
+        "{deltaker}, velg 2 personer å chugge med",
+        "{deltaker}, si din beste festlåt!! Sett den på!",
+        "{deltaker}, si din met upopulære mening - få på en liten diskusjon",
+        "{deltaker}, wooow du er heldig, grattis, chugg resten av glasset :D",
+        "{deltaker}, hvem i rommet ville du fått penest barn med? Dere feirer med 3 slurker hver!",
+        "{deltaker], gi personen til høyre for deg et oppriktig kompliment, skål!",
+        "{deltaker}, du og naboene din tar en slurk",
+        "{deltaker}, lag en regel!",
+        
 
 
     ];
