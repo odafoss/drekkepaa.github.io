@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "{deltaker], gi personen til høyre for deg et oppriktig kompliment, skål!",
         "{deltaker}, du og naboene din tar en slurk",
         "{deltaker}, lag en regel!",
-        
+
 
 
     ];
