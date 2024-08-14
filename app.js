@@ -97,6 +97,8 @@ var sporsmalListe1 = [
     "Hvem har det fineste smilet?",
     "SKÅÅÅÅL",
     "Hvem hadde gjort det best på reality-TV?",
+    "Alle som har et navn som starter med M må drikke!",
+    "Alle som har starta på anvendt datateknologi fordi de ikke aner hva de vil gjøre med livet sitt tar en felles skål for samhold <3"
 
 
 
