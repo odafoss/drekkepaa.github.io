@@ -157,8 +157,8 @@ var sporsmalListe2 = [
     "hvem blir uteligger",
     "Sølibat i 1 år eller dårlig sex i 1 år",
     "hvem er mest delulu",
-    "hvem vil overleve på en ødeøy",
-    "hvem studerer anvendt bare for lønna",
+    "Hvem vil overleve på en ødeøy",
+    "Hvem studerer anvendt bare for lønna",
     "hvem bruker minst tid på skole",
     "kjøttbollene drikker",
     "alle som heter johannes drikker",
@@ -167,8 +167,22 @@ var sporsmalListe2 = [
     "Drikk antall slurker du har har hooket med i rommet",
     "De som ikke klarer å skrive hele navnet til DQ (da quynh",
     "Personen til venstre for leseren må ha chugge-konkurranse med en person de selv velger",
-    "Boys",
+    "Boys drikker",
     "Alle med samme øyenfarge som Zoey må drikke",
+    "Dans Daniel, dans!",
+    "Bonjour Pernille! Idag skal du få slippe dialekter, sexy stemme og engelsk, men det vil koste deg dyrt - drikk opp resten av drikka di",
+    "Mandeeq, varm opp sangstemmen og syng refrenget i din favoritt festsang",
+    "Simen, shot baby!",
+    "Kristoffer, gi din beste Håvard-impression og drikk 3 slurker",
+    "Henni, liker du fotball? Hva er draktnr til din favspiller? Drikk antall slurker som draktnummeret",
+    "Kristine, drikk antall slurker i vors/fester som du har drukket Aga-cider",
+    "Beti, du hadde noen dansemoves på John's igår - vis oss!",
+    "Tone, vis din beste tone",
+    "Maria, drikk antall slurker som tannlegestudiet er",
+    "Zoey, ta en slurk og vær litt showey",
+    "Zuzanna, du meldte igår at du kunne vært med på Love Island. Om du skulle vært med nå så hadde det blitt i sesong 4 - 4 slurker på deg!",
+    "Jeg har aldri slengt meg på enn annen faddergruppe som egt ikke er min"
+
 
 
 

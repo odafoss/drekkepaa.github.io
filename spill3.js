@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "{deltaker}, si din met upopulære mening - få på en liten diskusjon",
         "{deltaker}, wooow du er heldig, grattis, chugg resten av glasset :D",
         "{deltaker}, hvem i rommet ville du fått penest barn med? Dere feirer med 3 slurker hver!",
-        "{deltaker], gi personen til høyre for deg et oppriktig kompliment, skål!",
+        "{deltaker}, gi personen til høyre for deg et oppriktig kompliment, skål!",
         "{deltaker}, du og naboene din tar en slurk",
         "{deltaker}, lag en regel!",
 
