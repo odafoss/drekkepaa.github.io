@@ -181,7 +181,8 @@ var sporsmalListe2 = [
     "Maria, drikk antall slurker som tannlegestudiet er",
     "Zoey, ta en slurk og vær litt showey",
     "Zuzanna, du meldte igår at du kunne vært med på Love Island. Om du skulle vært med nå så hadde det blitt i sesong 4 - 4 slurker på deg!",
-    "Jeg har aldri slengt meg på enn annen faddergruppe som egt ikke er min"
+    "Jeg har aldri slengt meg på enn annen faddergruppe som egt ikke er min",
+    "Alle må inn på instagram  å følge OtsJentegruppa"
 
 
 
